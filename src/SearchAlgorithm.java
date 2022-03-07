@@ -15,7 +15,7 @@ public class SearchAlgorithm {
             final Future<?> f = service.submit(()-> {
                 FileReader fr = new FileReader();
                 try {
-                    fr.readFile("./data/input14"); // change input here
+                    fr.readFile("./data/input13"); // change input here
                 } catch (Exception e) {
                     System.err.println("File not found");
                     System.exit(0);
