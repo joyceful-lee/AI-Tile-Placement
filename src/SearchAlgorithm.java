@@ -3,6 +3,11 @@ import java.util.Arrays;
 import java.util.concurrent.*;
 /*
  * This is the main class for the project.
+ * 
+ * IMPORTANT: make sure your IDE does not strip whitespaces at EOL.
+ * This can be changed via the following:
+ *      File -> Settings -> General -> On Save -> uncheck 'remove trailing spaces'
+ * If this is not done, landscape will not be accurate.
  */
 
 public class SearchAlgorithm {
