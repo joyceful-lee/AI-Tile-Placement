@@ -3,11 +3,11 @@ import java.util.ArrayList;
 public class ConstraintProp {
 
     public boolean AC3(ArrayList<Node> neighbors) { //initial grid
-        Arc arc = new Arc();
+        Arc arc;
         ArrayList<Node> nei = neighbors;
         ArrayList<Arc> arcs = new ArrayList<>();
         for (Node neighbor : neighbors) {
-            arc = arc.arcCreate(neighbor);
+            arc = Arc.arcCreate(neighbor);
             arcs.add(arc);
         }
         while(arcs.size()>0){
@@ -19,7 +19,7 @@ public class ConstraintProp {
                 }
                 for(Node next : nei){
                     if(next != n){
-                        arc = arc.arcCreate(next);
+                        arc = Arc.arcCreate(next);
                         arcs.add(arc);
                     }
                 }

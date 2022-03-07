@@ -100,7 +100,7 @@ public class FileReader {
             landscape[j] = str.toString().toCharArray();
             str.setLength(0);
         }
-        
+        // organizing the landscape into tiles
         int startR = 0, endR = 4;
         int startC = 0, endC = 4;
         int count = 0;

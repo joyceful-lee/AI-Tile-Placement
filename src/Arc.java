@@ -3,11 +3,6 @@ import java.util.Arrays;
 public class Arc {
     private final Node n1;
     private final Node n2;
-
-    public Arc() {
-        n1 = null;
-        n2 = null;
-    }
     
     public Arc(Node one, Node two) {
         n1 = one;

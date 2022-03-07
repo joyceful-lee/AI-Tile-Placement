@@ -25,8 +25,8 @@ class Tile{
         result += (" Layout: ");
         result += Arrays.toString(this.layout);
         result += this.layoutName;
-        result += "\t";
-        result += this.domain.toString();
+        // result += "\t";
+        // result += this.domain.toString();
         
         return result;
     }
@@ -212,7 +212,7 @@ public class Node {
          //smaller better
     }
     
-    // organizes tile from tile with lease # of values to tile with most
+    // organizes tile from tile with least # of values to tile with most
     public int[][] tileOrder(){
         int count = 0;
         int[][] list = new int[this.tiles.length][2];

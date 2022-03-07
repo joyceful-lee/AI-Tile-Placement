@@ -15,9 +15,10 @@ public class SearchAlgorithm {
             final Future<?> f = service.submit(()-> {
                 FileReader fr = new FileReader();
                 try {
-                    fr.readFile("./data/input10");
+                    fr.readFile("./data/input14"); // change input here
                 } catch (Exception e) {
                     System.err.println("File not found");
+                    System.exit(0);
                 }
                 char[][] tiles = fr.getTiles();
                 int[] targets = fr.getTargets();
@@ -38,6 +39,7 @@ public class SearchAlgorithm {
 
     }
 
+    // CSP
     public static int cspAlg(char[][] tiles, int[] targets, int[] tileCount, int totalTiles) {
         ConstraintProp cp = new ConstraintProp();
 
@@ -122,11 +124,12 @@ public class SearchAlgorithm {
         for (int i = 0; i < current.tiles.length; i++) {
             list.append("Tile ").append(i).append(": ")
                     .append(current.tiles[i].layoutName).append("\t | \t");
-            for (int j = 0; j < current.tiles[i].layout.length; j++) {
+            // if you want to see the uncovered bushes (for checking, etc.):
+            /*for (int j = 0; j < current.tiles[i].layout.length; j++) {
                 if (current.tiles[i].layout[j] == '0') {
                     list.append(current.tiles[i].value[j]).append(" ");
                 }
-            }
+            }*/
             list.append("\n");
         }
         
