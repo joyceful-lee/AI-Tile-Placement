@@ -79,9 +79,8 @@ public class SearchAlgorithm {
             ArrayList<Node> neighbors = getNeighbors(current);
             
             // AC3 alg to check consistency before neighbors are added to open list
-            if(cp.AC3(neighbors)) {
+           if(cp.AC3(neighbors)) {
                 for (Node test : neighbors) {
-
                     //node not in closed nor open set
                     if (!inClosed(test, closedList) && !inOpen(test, openList)) {
                         openList.add(test);

@@ -230,7 +230,7 @@ public class Node {
             if (o1[1] > o2[1])
                 return 1;
             else
-                return -1;
+                return 0;
         });
         return list;
     }
