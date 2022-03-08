@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 
 class Tile{
     char[] value;
@@ -226,12 +227,7 @@ public class Node {
             list[i][0] = i;
             count = 0;
         }
-        Arrays.sort(list, (o1, o2) -> {
-            if (o1[1] > o2[1])
-                return 1;
-            else
-                return 0;
-        });
+        Arrays.sort(list, Comparator.comparingInt(o -> o[1]));
         return list;
     }
 
