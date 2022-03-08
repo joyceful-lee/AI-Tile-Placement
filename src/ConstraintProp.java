@@ -50,7 +50,6 @@ public class ConstraintProp {
         }
         for(int i = 0; i<node.tiles.length;i++){
             if(node.tiles[i].domain.isEmpty()){
-                System.out.println("EMPTY");
                 removed = true;
                 node.tiles[i].domain.add('O');
                 node.tiles[i].domain.add('E');
