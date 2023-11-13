@@ -1,5 +1,5 @@
-# CSCI6511_Project2_Tiles
-CSP Tile Placement Problem for CSCI6511 Spring 2022
+# AI Tile Placement
+CSP Tile Placement Problem for * Spring 2022
 
 ## Given
 - You are given a landscape on which certain "bushes" grow, marked by colors: 1, 2, 3, 4.
